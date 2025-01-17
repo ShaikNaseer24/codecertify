@@ -2,16 +2,14 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains:['picsum.photos']
-  }
-
-};
-
-export default nextConfig;
-const eslintConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
+    domains: ["picsum.photos"],
   },
 };
 
-export { eslintConfig };
+module.exports = {
+  eslint:{
+    ignoreDuringBuilds: true
+  }
+}
+
+export default nextConfig;
