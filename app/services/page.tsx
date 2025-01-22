@@ -6,7 +6,7 @@ const services = [
   {
     title: "Web Development",
     description: "Custom web applications built with modern technologies",
-    image: "https://picsum.photos/200/300?random=10",
+    image: "/WEB.jpg",
     features: [
       "Responsive Design",
       "E-commerce Solutions",
@@ -18,7 +18,7 @@ const services = [
   {
     title: "Mobile App Development",
     description: "Native and cross-platform mobile applications",
-    image: "https://picsum.photos/200/300?random=11",
+    image: "/mb.jpg",
     features: [
       "iOS Development",
       "Android Development",
@@ -30,7 +30,7 @@ const services = [
   {
     title: "UI/UX Design",
     description: "User-centered design solutions for digital products",
-    image: "https://picsum.photos/200/300?random=12",
+    image: "/ui.jpg",
     features: [
       "User Research",
       "Wireframing",
@@ -39,18 +39,18 @@ const services = [
       "Usability Testing"
     ]
   },
-  {
-    title: "Cloud Solutions",
-    description: "Cloud infrastructure and deployment services",
-    image: "https://picsum.photos/200/300?random=13",
-    features: [
-      "Cloud Migration",
-      "DevOps Services",
-      "Serverless Architecture",
-      "Cloud Security",
-      "Performance Optimization"
-    ]
-  }
+  // {
+  //   title: "Cloud Solutions",
+  //   description: "Cloud infrastructure and deployment services",
+  //   image: "https://picsum.photos/200/300?random=13",
+  //   features: [
+  //     "Cloud Migration",
+  //     "DevOps Services",
+  //     "Serverless Architecture",
+  //     "Cloud Security",
+  //     "Performance Optimization"
+  //   ]
+  // }
 ]
 
 export default function Services() {

@@ -8,8 +8,8 @@ const courses = [
     title: "Web Development Bootcamp",
     description: "Master modern web development with HTML, CSS, JavaScript, React, and Node.js",
     duration: "3 months",
-    image: "https://picsum.photos/200/300?random=2",
-    price: "$999",
+    image: "/web.webp",
+    // price: "$999",
     skills: ["HTML/CSS", "JavaScript", "React", "Node.js", "MongoDB"],
     slug: "web-development"
   },
@@ -17,8 +17,8 @@ const courses = [
     title: "Mobile App Development",
     description: "Learn to build native mobile applications for iOS and Android",
     duration: "4 months",
-    image: "https://picsum.photos/200/300?random=3",
-    price: "$1299",
+    image: "/mobile.webp",
+    // price: "$1299",
     skills: ["Swift", "Kotlin", "React Native", "Flutter", "Firebase"],
     slug: "mobile-development"
   },
@@ -26,20 +26,12 @@ const courses = [
     title: "Data Science & Analytics",
     description: "Master data analysis, visualization, and machine learning",
     duration: "3 months",
-    image: "https://picsum.photos/200/300?random=4",
+    image: "/data_a.jpg",
     price: "$1199",
     skills: ["Python", "Pandas", "NumPy", "Scikit-learn", "Tableau"],
     slug: "data-science"
   },
-  {
-    title: "Cloud Computing",
-    description: "Learn cloud architecture and deployment with AWS and Azure",
-    duration: "2 months",
-    image: "https://picsum.photos/200/300?random=5",
-    price: "$899",
-    skills: ["AWS", "Azure", "Docker", "Kubernetes", "DevOps"],
-    slug: "cloud-computing"
-  }
+
 ]
 
 export default function Courses() {
@@ -56,8 +48,8 @@ export default function Courses() {
             <Image
               src={course.image || "/placeholder.svg"}
               alt={course.title}
-              width={300}
-              height={200}
+              width={600}
+              height={400}
               className="w-full object-cover h-[200px]"
             />
             <CardHeader>
@@ -81,9 +73,9 @@ export default function Courses() {
               </div>
             </CardContent>
             <CardFooter className="flex justify-between items-center">
-              <span className="text-2xl font-bold text-primary">{course.price}</span>
+              <span className="text-2xl font-bold text-primary">{""}</span> 
               <Button asChild className="bg-primary hover:bg-secondary text-primary-foreground">
-                <Link href={`/courses/${course.slug}`}>Learn More</Link>
+                <Link href={`/courses/`}>Learn More</Link>
               </Button>
             </CardFooter>
           </Card>

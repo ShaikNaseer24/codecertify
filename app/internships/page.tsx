@@ -1,40 +1,40 @@
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-
+import Link from 'next/link'
 const internships = [
   {
     title: "Software Development Internship",
     description: "Work on real-world projects using modern tech stack",
     duration: "6 months",
-    image: "https://picsum.photos/200/300?random=6",
-    stipend: "$1000/month",
+    image: "/sf.webp",
+    // stipend: "$1000/month",
     technologies: ["React", "Node.js", "PostgreSQL", "AWS", "Git"]
   },
   {
     title: "UI/UX Design Internship",
     description: "Design user interfaces for web and mobile applications",
     duration: "4 months",
-    image: "https://picsum.photos/200/300?random=7",
-    stipend: "$800/month",
+    image: "/uiuix1.jpg",
+    // stipend: "$800/month",
     technologies: ["Figma", "Adobe XD", "Sketch", "InVision", "Zeplin"]
   },
   {
     title: "Mobile App Development Internship",
     description: "Build native and cross-platform mobile applications",
     duration: "6 months",
-    image: "https://picsum.photos/200/300?random=8",
-    stipend: "$1000/month",
+    image: "/mobile (2).webp",
+    // stipend: "$1000/month",
     technologies: ["React Native", "Flutter", "iOS", "Android", "Firebase"]
   },
-  {
-    title: "Data Science Internship",
-    description: "Work on data analysis and machine learning projects",
-    duration: "4 months",
-    image: "https://picsum.photos/200/300?random=9",
-    stipend: "$900/month",
-    technologies: ["Python", "TensorFlow", "Pandas", "SQL", "Jupyter"]
-  }
+  // {
+  //   title: "Data Science Internship",
+  //   description: "Work on data analysis and machine learning projects",
+  //   duration: "4 months",
+  //   image: "https://picsum.photos/200/300?random=9",
+  //   // stipend: "$900/month",
+  //   technologies: ["Python", "TensorFlow", "Pandas", "SQL", "Jupyter"]
+  // }
 ]
 
 export default function Internships() {
@@ -76,8 +76,8 @@ export default function Internships() {
               </div>
             </CardContent>
             <CardFooter className="flex justify-between items-center">
-              <span className="text-2xl font-bold text-[#000080]">{internship.stipend}</span>
-              <Button className="bg-[#FFA500] hover:bg-[#000080]">Apply Now</Button>
+              <span className="text-2xl font-bold text-[#000080]">{}</span>
+              <Button className="bg-[#FFA500] hover:bg-[#000080]"><Link href={`/contact/`}>Apply Now</Link></Button>
             </CardFooter>
           </Card>
         ))}

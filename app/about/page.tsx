@@ -7,7 +7,7 @@ export default function About() {
       
       <div className="flex flex-col md:flex-row items-center mb-12">
         <div className="md:w-1/2 mb-6 md:mb-0">
-          <Image src="https://picsum.photos/400/600?random=1" alt="Team at work" width={600} height={400} className="rounded-lg shadow-lg" />
+          <Image src="/about.webp" alt="Team at work" width={500} height={300} className="rounded-lg shadow-lg" />
         </div>
         <div className="md:w-1/2 md:pl-8">
           <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
@@ -38,7 +38,7 @@ export default function About() {
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <h2 className="text-2xl font-semibold mb-4 text-center">Our Team</h2>
         <p className="text-center mb-8">
           CodeCertify Technologies is powered by a team of passionate educators, industry veterans, and tech enthusiasts. Our diverse team brings together years of experience from various sectors of the IT and software industry, ensuring that our students receive well-rounded and practical knowledge.
@@ -52,7 +52,7 @@ export default function About() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
