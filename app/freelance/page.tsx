@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Custom Web Applications",
     description: "Get your custom web application built by our expert developers",
-    image: "https://picsum.photos/200/300?random=14",
+    image: "/cwb.webp",
     services: [
       "Full-stack Development",
       "E-commerce Solutions",
@@ -15,12 +15,12 @@ const projects = [
       "API Integration",
       "Database Design"
     ],
-    startingPrice: "$2999"
+    // startingPrice: "$2999"
   },
   {
     title: "Mobile App Development",
     description: "Native and cross-platform mobile applications for your business",
-    image: "https://picsum.photos/200/300?random=15",
+    image: "/amd.webp",
     services: [
       "iOS Development",
       "Android Development",
@@ -28,12 +28,12 @@ const projects = [
       "App Maintenance",
       "API Development"
     ],
-    startingPrice: "$3999"
+    // startingPrice: "$3999"
   },
   {
     title: "UI/UX Design Projects",
     description: "Professional design services for digital products",
-    image: "https://picsum.photos/200/300?random=16",
+    image: "/ui.webp",
     services: [
       "User Interface Design",
       "User Experience Design",
@@ -41,12 +41,12 @@ const projects = [
       "Prototyping",
       "Design Systems"
     ],
-    startingPrice: "$1999"
+    // startingPrice: "$1999"
   },
   {
     title: "Custom Enterprise Solutions",
     description: "Tailored solutions for enterprise-level businesses",
-    image: "https://picsum.photos/200/300?random=17",
+    image: "/cm.webp",
     services: [
       "Enterprise Software",
       "Cloud Solutions",
@@ -54,7 +54,7 @@ const projects = [
       "Legacy System Updates",
       "Technical Consulting"
     ],
-    startingPrice: "$5999"
+    // startingPrice: "$5999"
   }
 ]
 
@@ -101,11 +101,12 @@ export default function Freelance() {
               <div>
                 <p className="text-sm text-gray-600 dark:text-gray-300">Starting from</p>
                 <p className="text-2xl font-bold text-[#000080] dark:text-[#FFA500]">
-                  {project.startingPrice}
+                  {""}
                 </p>
               </div>
               <Button className="bg-[#FFA500] hover:bg-[#000080]">
-                Get Quote
+              <Link href={`/freelance/`}>Get Quote</Link>
+              
               </Button>
             </CardFooter>
           </Card>

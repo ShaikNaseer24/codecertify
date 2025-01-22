@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-
+import Link from 'next/link'
 const services = [
   {
     title: "Web Development",
@@ -89,7 +89,7 @@ export default function Services() {
               </div>
             </CardContent>
             <CardFooter>
-              <Button className="w-full bg-[#FFA500] hover:bg-[#000080]">Learn More</Button>
+              <Button className="w-full bg-[#FFA500] hover:bg-[#000080]"><Link href={'/services/'}>Learn More</Link></Button>
             </CardFooter>
           </Card>
         ))}
